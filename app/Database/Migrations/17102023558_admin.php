@@ -4,6 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
+
 class Admim extends Migration
 {
     public function up()
@@ -37,6 +38,7 @@ class Admim extends Migration
                 'null' => false,
             ],
         ]);
+        
         $this->forge->addKey('id', true);
         $this->forge->createTable('admin');
     }
